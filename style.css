@@ -27,6 +27,16 @@ body {
     box-sizing: border-box;
 }
 
+/*.sidebar .buttonsidebar {
+    width:45px;
+    height:45px;
+    margin:0px 0px 20px 0px;
+    background-color: transparent;
+    border: none;
+    color:#00ff84;
+    
+}*/
+
 .sidebar .profile {
     text-align: center;
     margin-bottom: 20px;
@@ -69,23 +79,16 @@ body {
     justify-content: center;
     gap: 10px; /* Espacement entre les icônes */
     margin-top: auto; /* Positionne en bas */
-}
-
-.sidebar .social-links a {
-    color: white;
+        color: white;
     font-size: 1.2em; /* Taille des icônes légèrement augmentée */
-    text-decoration: none;
+        text-decoration: none;
     transition: color 0.3s ease;
 }
 
-/* Styles des icônes (optionnel, pour cohérence) */
+/* Styles des icônes du sommaire */
 .sidebar .icon {
     font-size: 1.2em;
     display: inline-block;
-}
-
-.sidebar .social-links a:hover {
-    color: #00ff84; /* Vert clair au survol */
 }
 
 /* Contenu principal */
@@ -128,6 +131,8 @@ body {
 }
 
 #section2 {
+    border-top: solid;
+    border-block-color: #00de73;
     color: white;
     flex-direction: column; /* Les éléments s'empilent verticalement */
 }
@@ -141,6 +146,57 @@ body {
     color: white;
     flex-direction: column; /* Les éléments s'empilent verticalement */
 }
+
+    /* Section des compétences */
+    #skills {
+        text-align: center;
+        padding: 40px 20px;
+        color: #004c54; /* Texte bleu foncé */
+    }
+
+    /* Titre principal */
+    #skills h1 {
+        margin-bottom: 20px;
+    }
+
+    /* Conteneur des cartes */
+    .skills-container {
+        display: flex;
+        justify-content: center; /* Centre les cartes */
+        gap: 20px; /* Espace entre les cartes */
+        flex-wrap: wrap; /* Cartes en colonne sur petits écrans */
+    }
+
+    /* Style des cartes */
+    .card {
+        background: linear-gradient(135deg, #00ff84, #004c54);
+        border-radius: 8px; /* Coins arrondis */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+        width: 280px; /* Largeur fixe */
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation d'agrandissement */
+    }
+
+    /* Agrandissement au survol */
+    .card:hover {
+        transform: scale(1.05); /* Zoom à 105% */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+    }
+
+    /* Titre des cartes */
+    .card h2 {
+        margin-bottom: 15px;
+    }
+
+    /* Liste des compétences */
+    .card ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .card li {
+        margin-bottom: 10px;
+    }
 
 #section5 {
     color: white;
@@ -159,26 +215,9 @@ body {
     transition: color 1s ease;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: left;
-    }
-    20% {
-        background-position: center;
-    }
-    40% {
-        background-position: right;
-    }
-    60% {
-        background-position: center
-    }
-    80% {
-        background-position: left;
-    }
-}
-
 .btn-cv:hover {
     color: #004c54;
+    background: linear-gradient(270deg, #00ff84, #004c54);
 }
 
 
@@ -186,11 +225,28 @@ body {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px); /* Légère remontée */
+        transform: translateY(10px); /* Légère remontée */
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
+/* Clignote */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink {
+    animation: blink 1s ease-in-out;
+}
+

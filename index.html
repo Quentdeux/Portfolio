@@ -14,6 +14,9 @@
 
         <!-- Sommaire -->
         <nav class="sidebar">
+            <!--<button class="buttonsidebar">
+                <i class="fa-solid fa-left-long"></i>
+            </button>-->
             <div class="profile">
                 <img src="PhotoProfileAAjouter.png" alt="Photo de profil" class="profile-pic">
                 <h2>Quentin Porte</h2>
@@ -23,12 +26,16 @@
                 <li><a href="#section2"><span class="icon">👤</span> Profil</a></li>
                 <li><a href="#section3"><span class="icon">📂</span> Projets</a></li>
                 <li><a href="#section4"><span class="icon">💡</span> Compétences</a></li>
-                <li><a href="#section5"><span class="icon">🔗</span> Ressources</a></li>
                 <li><a href="#section6"><span class="icon">📜</span> Veille technologique</a></li>
+                <li><a href="#section5"><span class="icon">🔗</span> L'épreuve du portfolio</a></li>
+                <li><a href="#section5"><span class="icon">🔗</span> Me contacter</a></li>
+				
             </ul>
             <div class="social-links">
                 <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/Quentdeux" target="_blank" class="LienExt">
+                    <i class="fab fa-github"></i>
+                </a>
                 <a href="CV.odt" target="_blank"><i class="fab fa-cv"></i></a>
             </div>
         </nav>
@@ -47,8 +54,8 @@
             <section id="section2" class="ScreenSection section-gradient">
                 <h1>Profil</h1>
                 <p>
-                    Je m'appelle PORTE Quentin, j'ai 19 ans et je suis en deuxième année de BTS SIO option SLAM (solutions logicielles et applications métiers ), au lycée Jacques Brel, à Venissieux.
-                    Avant cette formation, je suivais une formation de bac professionnel Boulanger-pâtissier, et j'aimerais poursuivre cette formation avec une licence professionnelle.
+                    Je m'appelle PORTE Quentin, j'ai 19 ans et je suis en deuxième année de BTS SIO option SLAM (solutions logicielles et applications métiers ), au lycée Jacques Brel, à Venissieux. <br>
+                    Avant cette formation, je suivais une formation de bac professionnel Boulanger-pâtissier, et j'aimerais poursuivre cette formation de BTS avec une licence professionnelle.
                 </p>
                 <div style="text-align: center; margin-top: 20px;">
                     <a href="CV.odt" target="_blank" class="btn-cv">Télécharger mon CV</a>
@@ -70,10 +77,10 @@
                 </p>
             </section>
 
-            <!--  -->
+            <!-- Compétences -->
             <section id="section4" class="ScreenSection section-gradient">
                 <h1>Compétences</h1>
-                <p>
+                <!--<p>
                     <strong>Compétences techniques :</strong>
                     <ul>
                         <li>Développement en C#, C, Python.</li>
@@ -92,13 +99,36 @@
                     <ul>
                         <li>Les liens vers mon github, mon linkedin et mon CV sont disponibles dans le sommaire</li>
                     </ul>
-                </p>
+                </p>-->
+                <div class="skills-container">
+                    <!-- Cadre des compétences techniques -->
+                    <div class="card" id="techniques">
+                        <h2>Compétences Techniques</h2>
+                        <ul>
+                            <li>Développement en C#, C, Python</li>
+                            <li>Création d'interface en XAML</li>
+                            <li>Gestion de bases de données PostgreSQL</li>
+                            <li>Modélisation de bases de données</li>
+                            <li>Utilisation de Git pour la gestion de version</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cadre des compétences transversales -->
+                    <div class="card" id="transversales">
+                        <h2>Compétences Transversales</h2>
+                        <ul>
+                            <li>Résolution de problèmes techniques</li>
+                            <li>Autonomie et gestion de projet</li>
+                            <li>Apprentissage et utilisation de nouveaux logiciels</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             <!-- Contact -->
-            <section id="section5" class="ScreenSection section-gradient">
-                <h1>Contact</h1>
-                <p>Email : <a href="mailto:quentin.porte@example.com">quentin.porte@example.com</a></p>
+            <section id="section5" class="ScreenSection section-gradient-alt">
+                <h1>Me contacter</h1>
+                <p>Email : <a href="mailto:quentin.porte@outlook.com" target="_blank" class="LienExt">quentin.porte@outlook.com</a></p>
                 <p>Téléphone : +33 7 67 50 08 81</p>
             </section>
         </main>
