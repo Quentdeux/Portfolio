@@ -3,7 +3,7 @@
         margin: 0;
         font-family: Arial, sans-serif;
         background:#2c2e47;
-        background-image: './Images/Background_2.jpg';
+        background-image: url('.\\Images\\Background_2.jpg');
 
         /* couleur  du texte et fond par défaut */
         color: white;
