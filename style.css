@@ -141,6 +141,7 @@
         height: 100vh;
         color: white;
         overflow:scroll;
+        justify-content: flex-start;
     }
 
     #section5 p {
