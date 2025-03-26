@@ -15,8 +15,8 @@
                 <li><a href="index.html">   <span class="icon">🏠</span> Accueil</a></li>
                 <li><a href="profil.html">  <span class="icon">👤</span> Profil</a></li>
                 <li><a href="projets.html"> <span class="icon">📂</span> Projets</a></li>
-                <li><a href="compétences.html"> <span class="icon">💡</span> Fiche de compétences</a></li>
-                <li><a href="veille.html">  <span class="icon">📜</span> Veille technologique</a></li>
+                <li><a href="compétences.html"> <span class="icon">📜</span> Fiche de compétences</a></li>
+                <li><a href="veille.html">  <span class="icon">💡</span> Veille technologique</a></li>
                 <li><a href="contact.html"> <span class="icon">🔗</span> Contact</a></li>
             </ul>
             <div class="social-links">
@@ -29,64 +29,81 @@
         </nav>
 
         <main class="content">
-            <section id="section3" class="ScreenSection section-gradient">
-                <h1>Projets </h1>
-                <div>
+            <section id="SectionProjets" class="ScreenSection section-gradient">
+                <div id="ListeProjets">
+                    <h3>
+                        Entreprise
+                    </h3>
+                    <button class="btn-orange">IVS</button> <!-- App + plugins -->
+                    <button class="btn-orange">Mise en place de l'environnement</button> <!-- Capt écran -->
+                    <button class="btn-orange">Support utilisateur</button> <!-- Fix de tri des messages automatiques -->
+
+                    <h3>
+                        CFA
+                    </h3>
+                    <button class="btn-orange">Logeproj</button> <!-- Fix de tri des messages automatiques -->
+
+                </div>
+               
+
+                <!-- <div>
                     <button onclick="toggleEntre()" class="btn-orange">Projets en entreprise</button>
                     <button onclick="toggleLycee()" class="btn-orange">Projets en formation</button>
                 </div>
 
-                <p id="ToggleEntreprise" class="toggleDiv" style="height: 0;">
-                    <br>
-                    Durant les deux années de formation, j'ai travaillé avec le Centre à Compétences National Renvoi de Flux Vidéo, en tant que développeur :
-                    <br>
-                    C'est un des services faisant partie de la DSIC (Direction des Systèmes d'Informations et de Communication),
-                    <br>
-                    qui fait elle-même partie du Secrétatiat Général pour l'Administration du Ministère de l'intérieur.
-                    <br>
-                    <br>
-                    Le rôle du CCN, comme son nom l'indique, est la mise en place de solutions de renvoi de flux vidéos, sur tout le territoire au bénéfice des services du ministère de l'intérieur.
-                    <br>
-                    <br>
-                    Les deux applications sur lesquelles j'ai travaillé sont :
-                    <br>
-                    - Une interface de visualisation permettant le choix et la visualtisation de flux vidéo.
-                    <br>
-                    J'ai également réalisé plusieurs plugins pour cette solution, permettant par exemple de vérifier la disponibilité des flux, ou encore d'en ajouter et supprimer.
-                    <br>
-                    <br>
-                    - Un plugin, présenté sous forme de dll (Dynamic Link Library), incorporé à une application déjà éxistante, en me basant sur le code de plugins exemples.
-                    <br>
-                    son but est l'affichage de messages sur l'application d'un client, depuis un poste ayant un rôle d'administrateur.
-                    <br>
-                    <img src=".\Images\Organigramme_Dsic.png" style="height: 0;"/>
-                </p>
-
-                <!-- <p id="ToggleFormation" class="toggleDiv" style="height: 0;">
-                    <br>
-                    Durant les deux années de formation, j'ai travaillé avec le Centre à Compétences National Renvoi de Flux Vidéo, en tant que développeur :
-                    <br>
-                    C'est un des services faisant partie de la DSIC (Direction des Systèmes d'Informations et de Communication),
-                    <br>
-                    qui fait elle-même partie du Secrétatiat Général pour l'Administration du Ministère de l'intérieur.
-                    <br>
-                    <br>
-                    Le rôle du CCN, comme son nom l'indique, est la mise en place de solutions de renvoi de flux vidéos, sur tout le territoire au bénéfice des services du ministère de l'intérieur.
-                    <br>
-                    <br>
-                    Les deux applications sur lesquelles j'ai travaillé sont :
-                    <br>
-                    - Une interface de visualisation permettant le choix et la visualtisation de flux vidéo.
-                    <br>
-                    J'ai également réalisé plusieurs plugins pour cette solution, permettant par exemple de vérifier la disponibilité des flux, ou encore d'en ajouter et supprimer.
-                    <br>
-                    <br>
-                    - Un plugin, présenté sous forme de dll (Dynamic Link Library), incorporé à une application déjà éxistante, en me basant sur le code de plugins exemples.
-                    <br>
-                    son but est l'affichage de messages sur l'application d'un client, depuis un poste ayant un rôle d'administrateur.
-                    <br>
-                    <img src=".\Images\Organigramme_Dsic.png"/>
-                </p> -->
+                <div id="DivEntreprise" class="ToggleEntreprise toggleDiv translate-to-left">
+                    <p>
+                        Durant les deux années de formation, j'ai travaillé avec le Centre à Compétences National Renvoi de Flux Vidéo, en tant que développeur :
+                        <br>
+                        C'est un des services faisant partie de la DSIC (Direction des Systèmes d'Informations et de Communication),
+                        <br>
+                        qui fait elle-même partie du Secrétatiat Général pour l'Administration du Ministère de l'intérieur.
+                        <br>
+                        <br>
+                        Le rôle du CCN, comme son nom l'indique, est la mise en place de solutions de renvoi de flux vidéos, sur tout le territoire au bénéfice des services du ministère de l'intérieur.
+                        <br>
+                        <br>
+                        Les deux applications sur lesquelles j'ai travaillé sont :
+                        <br>
+                        - Une interface de visualisation permettant le choix et la visualtisation de flux vidéo.
+                        <br>
+                        J'ai également réalisé plusieurs plugins pour cette solution, permettant par exemple de vérifier la disponibilité des flux, ou encore d'en ajouter et supprimer.
+                        <br>
+                        <br>
+                        - Un plugin, présenté sous forme de dll (Dynamic Link Library), incorporé à une application déjà éxistante, en me basant sur le code de plugins exemples.
+                        <br>
+                        son but est l'affichage de messages sur l'application d'un client, depuis un poste ayant un rôle d'administrateur.
+                        <br>
+                        <img src=".\Images\Organigramme_Dsic.png" />
+                    </p>
+                </div>
+                
+                <div id="DivFormation" class="ToggleFormation toggleDiv">
+                    <p>
+                        Durant les deux années de formation, j'ai travaillé avec le Centre à Compétences National Renvoi de Flux Vidéo, en tant que développeur :
+                        <br>
+                        C'est un des services faisant partie de la DSIC (Direction des Systèmes d'Informations et de Communication),
+                        <br>
+                        qui fait elle-même partie du Secrétatiat Général pour l'Administration du Ministère de l'intérieur.
+                        <br>
+                        <br>
+                        Le rôle du CCN, comme son nom l'indique, est la mise en place de solutions de renvoi de flux vidéos, sur tout le territoire au bénéfice des services du ministère de l'intérieur.
+                        <br>
+                        <br>
+                        Les deux applications sur lesquelles j'ai travaillé sont :
+                        <br>
+                        - Une interface de visualisation permettant le choix et la visualtisation de flux vidéo.
+                        <br>
+                        J'ai également réalisé plusieurs plugins pour cette solution, permettant par exemple de vérifier la disponibilité des flux, ou encore d'en ajouter et supprimer.
+                        <br>
+                        <br>
+                        - Un plugin, présenté sous forme de dll (Dynamic Link Library), incorporé à une application déjà éxistante, en me basant sur le code de plugins exemples.
+                        <br>
+                        son but est l'affichage de messages sur l'application d'un client, depuis un poste ayant un rôle d'administrateur.
+                        <br>
+                        <img src=".\Images\Organigramme_Dsic.png" />
+                    </p>
+                </div> -->
 
             </section>
         </main>

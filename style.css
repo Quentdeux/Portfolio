@@ -10,10 +10,9 @@
         background-size: cover;
 
         overflow-y:hidden;
+        overflow-x:hidden;
     }
-/* */
-
-/* Navbar horizontale transparente */
+ /* Navbar horizontale transparente */
     #navbar {
         position:fixed;
         top: 0;
@@ -21,15 +20,15 @@
         width: 100%;
         height : 100px;
 
-        /* Contenu de la barre de navigation */
+         /* Contenu de la barre de navigation */
         display: flex;
         justify-content: center;
         padding: 25px;
 
         /* Couleur de fond */
-        background-color: rgba(50, 50, 65, 0.9); /* Bleu foncé légèrement transparent */
+        background-color: rgba(50, 50, 65, 0.9);  /* Bleu foncé légèrement transparent */
 
-        /* Position de l'élément en profondeur. 0 serait sur la scrollbar */
+         /*Position de l'élément en profondeur. 0 serait sur la scrollbar */
         z-index: 10;
 
         opacity: 1; /* Visible par défaut */
@@ -84,6 +83,9 @@
 /* */
 
 
+
+
+
 /* Contenu principal */
     .ScreenSection {
         display: flex;
@@ -95,45 +97,107 @@
         flex-direction: column; /* Les éléments s'empilent verticalement */
     }
 
-    #section1 {
+    #SectionIndex {
         background-color: rgba(0, 0, 0, 0);
         font-size: 30px;
         height: 100vh;
-        /* Bordure du texte pour le rendre plus lisible */
+        
+        /*Bordure du texte pour le rendre plus lisible */
         text-shadow: 2px 0 #323232, -2px 0 #323232, 0 2px #323232, 0 -2px #323232,
             1px 1px #323232, -1px -1px #323232, 1px -1px #323232, -1px 1px #323232;
     }
 
-    #section2 {
-        color: white;
+    #SectionProfil {
         height: 100vh;
     }
 
-    #section2 p{
+    #SectionProfil p{
         width: 80%;
         text-align: center;
         line-height: 30px;
     }
-
-    #section3{
-        height: 100vh;
+    .btn-orange {
+        background: linear-gradient(90deg, #de5100, #ff2f00);
         color: white;
-        /* Padding pour que les cases ne se collent pas au bord de la fenêtre */
-        padding:20px 0 50px;
-        overflow: scroll;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        background-size: 200%;
+        transition: color 0.5s ease;
+        border:none;
+    }
+    .btn-orange:hover {
+        color: #004c54;
+        background: linear-gradient(100deg, #de2900, #de5100);
     }
 
-    .toggleDiv {
-        width: 1024px;
-        height: 100px;
-        
-        max-height: 0px;
-        transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+
+    #SectionProjets{
+        height: 100vh;
+        color: white; 
+        overflow: scroll;
+        align-items: unset;
+
+        /* Padding pour que les cases ne se collent pas au bord de la fenêtre */
+        /*padding: 0 1vw 0 1vw;
+        overflow: hidden;*/
     }
+    #ListeProjets {
+        left:1vw;
+        top:110px;
+        height: calc(100vh - 130px);
+        width: 15vw;
+        position:fixed;
+        
+        border:solid;
+        border-color: #ff7d00;
+        border-radius:10px;
+        
+        justify-content: center;
+        text-align:center;
+        flex-direction: column; /* Les éléments s'empilent verticalement */
+        overflow:scroll;
+        scrollbar-width:thin;
+    }
+    #ListeProjets h3 {
+        background: linear-gradient(90deg, #ff7d00, #de5100);
+        height:30px;
+    }
+    #ListeProjets button{
+        width: calc(90%);
+        padding:5px;
+        margin: 5px 0;
+        font-size:16px;
+        transition: transform 0.5s ease;
+    }
+    #ListeProjets button:hover{
+        transform: scale(1.05); /* Zoom à 105% */
+        color: #004c54;
+        background: linear-gradient(100deg, #de2900, #de5100);
+    }
+    #Invisible {
+        visibility:hidden
+    }
+
 
     #section4 {
         height: 100vh;
         color: white;
+    }
+
+    #section4 iframe {
+        width: 75%;
+        height: calc(100% - 130px);
+        margin-top: 110px;
+        background: #e6e6e6;
+        border-radius: 5px;
+
+        /*width: 90%;
+        margin-top: 10vh;
+        height: 85vh;
+        align-content: center;
+        background-color: lightcyan;*/
     }
         
     #section5 {
@@ -141,7 +205,6 @@
         height: 100vh;
         color: white;
         overflow:scroll;
-        justify-content: flex-start;
     }
 
     #section5 p {
@@ -161,7 +224,7 @@
     @keyframes fadeIn {
         from {
             opacity: 0;
-            transform: translateY(10px); /* Légère remontée */
+            transform: translateY(10px);  Légère remontée 
         }
         to {
             opacity: 1;
@@ -169,55 +232,68 @@
         }
     }
 
-/* Bouton */
-    .btn-orange {
-        background: linear-gradient(90deg, #de5100, #ff2f00);
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
-        margin: 20px;
-        border-radius: 5px;
-        font-weight: bold;
-        background-size: 200%;
-        transition: color 0.5s ease;
-        border:none;
+    @keyframes TranslateToLeft{
+        from {  margin-right: 0%;   }
+        to {    margin-right: 200%; }
     }
-    .btn-orange:hover {
-        color: #004c54;
-        background: linear-gradient(100deg, #de2900, #de5100);
+    @keyframes TranslateFromLeft{
+        from {  margin-right: 200%; }
+        to {    margin-right: 0%;   }
+
+    }
+    @keyframes TranslateToRight{
+        from {  margin-left: 0%;    }
+        to {    margin-left: 200%;  }
+    }
+    @keyframes TranslateFromRight{
+        from {  margin-left: 200%;  }
+        to {    margin-left: 0%;    }
+    }
+
+    .translate-to-left {
+        animation: TranslateToLeft 0.5s forwards;
+    }
+    .translate-from-left {
+        animation: TranslateFromLeft 0.5s forwards;
+    }
+    .translate-to-right {
+        animation: TranslateToRight 0.5s forwards;
+    }
+    .translate-from-right {
+        animation: TranslateFromRight 0.5s forwards;
     }
 
 /* Conteneur des cartes */
     .projects-container {
         display: flex;
-        justify-content: center; /* Centre les cartes */
-        gap: 25px; /* Espace entre les cartes */
-        flex-wrap: wrap; /* Cartes en colonne sur petits écrans */
+        justify-content: center;  Centre les cartes 
+        gap: 25px;  Espace entre les cartes 
+        flex-wrap: wrap;  Cartes en colonne sur petits écrans 
     }
 
-/* Style des cartes */
+ /* Style des cartes */
     .card {
         background: linear-gradient(135deg, #de5100, #de2900);
-        border-radius: 8px; /* Coins arrondis */
+        border-radius: 8px;  Coins arrondis 
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre */
-        width: 280px; /* Largeur fixe */
+        width: 280px;  Largeur fixe 
         padding: 20px;
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation d'agrandissement */
         text-align: center;
     }
 
-    /* Agrandissement au survol */
+     /* Agrandissement au survol */
     .card:hover {
-        transform: scale(1.05); /* Zoom à 105% */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+        transform: scale(1.05);  Zoom à 105% 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre intense */
     }
 
-    /* Titre des cartes */
+     /* Titre des cartes */
     .card h2 {
         margin-bottom: 15px;
     }
 
-    /* Liste des compétences */
+     /* Liste des compétences */
     .card ul {
         padding: 0;
         list-style: none;
