@@ -1,22 +1,42 @@
+var divEntreprise = document.getElementById("DivEntreprise");
+var divFormation = document.getElementById("DivFormation");
+
+
+
+
 function toggleEntre() {
-    var divEntreprise = document.getElementById("ToggleEntreprise");
-    if (divEntreprise.style.maxHeight != "9999px") {
-        divEntreprise.style.maxHeight = "9999px"; // Ajuste selon le contenu
-        
-    } else {
-        divEntreprise.style.maxHeight = "0px";
-        divEntreprise.style.padding = "0px";
+    if (divEntreprise.classList.contains('translate-to-left')) {
+        divEntreprise.classList.remove('translate-to-left');
+        divEntreprise.classList.add('translate-from-left');
     }
-}
+    else {
+        if (divEntreprise.classList.contains('translate-from-left')) {
+            divEntreprise.classList.remove('translate-from-left');
+        }
+        divEntreprise.classList.add('translate-to-left');
+    }
+    if (divFormation.classList.contains('translate-to-right')) {
+        divFormation.classList.remove('translate-to-right');
+        divFormation.classList.add('translate-from-right');
+    }
+    else {
+        if (divFormation.classList.contains('translate-from-right')) {
+            divFormation.classList.remove('translate-from-right');
+        }
+        divFormation.classList.add('translate-to-right');
+    }
+ }
 
 function toggleLycee() {
-    var divFormation = document.getElementById("ToggleFormation");
-    if (divFormation.style.maxHeight == "0px" || divFormation.style.maxHeight == "") {
-        divFormation.style.maxHeight = "9999px"; // Ajuste selon le contenu
-        
-    } else {
-        divFormation.style.maxHeight = "0px";
-        divFormation.style.padding = "0px";
+    if (divFormation.classList.contains('translate-to-right')) {
+        divFormation.classList.remove('translate-to-right');
+        divFormation.classList.add('translate-from-right');
+    }
+    else {
+        if (divFormation.classList.contains('translate-from-right')) {
+            divFormation.classList.remove('translate-from-right');
+        }
+        divFormation.classList.add('translate-to-right');
     }
 }
 
