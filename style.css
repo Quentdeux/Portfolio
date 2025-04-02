@@ -90,7 +90,7 @@
     .ScreenSection {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         animation: fadeIn 1s ease-in-out;
         font-size: 20px;
         background: rgba(45, 45, 70, 0.9);
@@ -101,21 +101,57 @@
         background-color: rgba(0, 0, 0, 0);
         font-size: 30px;
         height: 100vh;
+        justify-content: center;
         
         /*Bordure du texte pour le rendre plus lisible */
         text-shadow: 2px 0 #323232, -2px 0 #323232, 0 2px #323232, 0 -2px #323232,
             1px 1px #323232, -1px -1px #323232, 1px -1px #323232, -1px 1px #323232;
     }
 
+
     #SectionProfil {
         height: 100vh;
     }
-
+    #SectionProfil h1 {
+        margin-top: 120px;
+    }
     #SectionProfil p{
         width: 80%;
         text-align: center;
         line-height: 30px;
     }
+    .minimized {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    .maximized {
+        max-height: 100vh; /* Ajuste selon le contenu */
+    }
+    .presentationSIO {
+        flex-shrink: 0;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .presentationSIO .btn-orange {
+        background: none;
+        margin: 0px 10px 0px 10px;
+    }
+    .section-cadre {
+        margin: 0px 10px 0px 10px;
+        padding: 10px;
+        border:solid;
+        border-color: #ff7d00;
+        border-radius:10px;
+        flex: 1 1 0px;
+    }
+    .section-cadre p {
+        width: 100%;
+    }
+
+
     .btn-orange {
         background: linear-gradient(90deg, #de5100, #ff2f00);
         color: white;
@@ -135,8 +171,8 @@
 
     #SectionProjets{
         height: 100vh;
-        color: white; 
-        overflow: scroll;
+        color: white;
+        overflow: hidden;
         align-items: unset;
 
         /* Padding pour que les cases ne se collent pas au bord de la fenêtre */
@@ -154,10 +190,9 @@
         border-color: #ff7d00;
         border-radius:10px;
         
-        justify-content: center;
         text-align:center;
-        flex-direction: column; /* Les éléments s'empilent verticalement */
-        overflow:scroll;
+        overflow-y:visible;
+        overflow-x:hidden;
         scrollbar-width:thin;
     }
     #ListeProjets h3 {
@@ -176,10 +211,54 @@
         color: #004c54;
         background: linear-gradient(100deg, #de2900, #de5100);
     }
-    #Invisible {
-        visibility:hidden
-    }
+    .CadreProjets {
+        left: calc(16vw + 20px);
+        top: 110px;
+        height: calc(100vh - 130px);
+        width: calc(98% - (16vw + 20px));
+        position: fixed;
 
+        border: solid;
+        border-color: #ff7d00;
+        border-radius: 10px;
+
+        text-align: center;
+        overflow-y:visible;
+        overflow-x:hidden;
+        /*overflow: scroll;*/
+        scrollbar-width: thin;
+    }
+    .invisible {
+        display:none;
+    }
+    .visible {
+        display:block;
+    }
+    .fade-in {
+        animation: fadeIn 0.4s linear;
+    }
+    .fade-out {
+        animation: fadeOut 0.4s linear;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            
+        }
+        to {
+            opacity: 1;
+        
+        }
+    }
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+            
+        }
+        to {
+            opacity: 0;
+        }
+    }
 
     #section4 {
         height: 100vh;
@@ -192,12 +271,15 @@
         margin-top: 110px;
         background: #e6e6e6;
         border-radius: 5px;
-
+        
         /*width: 90%;
         margin-top: 10vh;
         height: 85vh;
         align-content: center;
         background-color: lightcyan;*/
+    }
+    iframe #document html{
+        scrollbar-width: thin;
     }
         
     #section5 {
@@ -221,11 +303,11 @@
 
 
 /* Animation d'apparition*/
-    @keyframes fadeIn {
+    /*@keyframes fadeIn {
         from {
             opacity: 0;
-            transform: translateY(10px);  Légère remontée 
-        }
+            transform: translateY(10px);*/ /* Légère remontée */
+        /*}
         to {
             opacity: 1;
             transform: translateY(0);
@@ -261,40 +343,43 @@
     }
     .translate-from-right {
         animation: TranslateFromRight 0.5s forwards;
-    }
+    }*/
+
+/* Bouton */
+    /**/
 
 /* Conteneur des cartes */
-    .projects-container {
+    /*.projects-container {
         display: flex;
-        justify-content: center;  Centre les cartes 
-        gap: 25px;  Espace entre les cartes 
-        flex-wrap: wrap;  Cartes en colonne sur petits écrans 
-    }
+        justify-content: center;*/ /* Centre les cartes */
+        /*gap: 25px;*/ /* Espace entre les cartes */
+        /*flex-wrap: wrap;*/ /* Cartes en colonne sur petits écrans */
+    /*}*/
 
- /* Style des cartes */
-    .card {
+/* Style des cartes */
+    /*.card {
         background: linear-gradient(135deg, #de5100, #de2900);
-        border-radius: 8px;  Coins arrondis 
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre */
-        width: 280px;  Largeur fixe 
-        padding: 20px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation d'agrandissement */
-        text-align: center;
-    }
+        border-radius: 8px;*/ /* Coins arrondis */
+        /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/ /* Ombre */
+        /*width: 280px;*/ /* Largeur fixe */
+        /*padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;*/ /* Animation d'agrandissement */
+        /*text-align: center;
+    }*/
 
-     /* Agrandissement au survol */
-    .card:hover {
-        transform: scale(1.05);  Zoom à 105% 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre intense */
-    }
+    /* Agrandissement au survol */
+    /*.card:hover {
+        transform: scale(1.05);*/ /* Zoom à 105% */
+        /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/ /* Ombre renforcée */
+    /*}*/
 
-     /* Titre des cartes */
-    .card h2 {
+    /* Titre des cartes */
+    /*.card h2 {
         margin-bottom: 15px;
-    }
+    }*/
 
-     /* Liste des compétences */
-    .card ul {
+    /* Liste des compétences */
+    /*.card ul {
         padding: 0;
         list-style: none;
     }
@@ -305,4 +390,4 @@
 
     .VeilleCard{
         width: 800px;
-    }
+    }*/

@@ -9,7 +9,7 @@
     </head>
 
     <body>
-
+        <!-- Navbar -->
         <nav class="links" id="navbar">
             <ul>
                 <li><a href="index.html">   <span class="icon">🏠</span> Accueil</a></li>
@@ -30,80 +30,315 @@
 
         <main class="content">
             <section id="SectionProjets" class="ScreenSection section-gradient">
+                
+                <!-- Liste des boutons pour montrer les projets -->
                 <div id="ListeProjets">
+                    <!-- <button class="BoutonProjets btn-orange" Show-Section="Exemple">Exemple</button> Exemple de bouton -->                    
                     <h3>
                         Entreprise
                     </h3>
-                    <button class="btn-orange">IVS</button> <!-- App + plugins -->
-                    <button class="btn-orange">Mise en place de l'environnement</button> <!-- Capt écran -->
-                    <button class="btn-orange">Support utilisateur</button> <!-- Fix de tri des messages automatiques -->
+                    <button class="BoutonProjets btn-orange" Show-Section="IVS">IVS</button> <!-- App + plugins -->
 
                     <h3>
                         CFA
                     </h3>
-                    <button class="btn-orange">Logeproj</button> <!-- Fix de tri des messages automatiques -->
-
-                </div>
-               
-
-                <!-- <div>
-                    <button onclick="toggleEntre()" class="btn-orange">Projets en entreprise</button>
-                    <button onclick="toggleLycee()" class="btn-orange">Projets en formation</button>
                 </div>
 
-                <div id="DivEntreprise" class="ToggleEntreprise toggleDiv translate-to-left">
-                    <p>
-                        Durant les deux années de formation, j'ai travaillé avec le Centre à Compétences National Renvoi de Flux Vidéo, en tant que développeur :
-                        <br>
-                        C'est un des services faisant partie de la DSIC (Direction des Systèmes d'Informations et de Communication),
-                        <br>
-                        qui fait elle-même partie du Secrétatiat Général pour l'Administration du Ministère de l'intérieur.
-                        <br>
-                        <br>
-                        Le rôle du CCN, comme son nom l'indique, est la mise en place de solutions de renvoi de flux vidéos, sur tout le territoire au bénéfice des services du ministère de l'intérieur.
-                        <br>
-                        <br>
-                        Les deux applications sur lesquelles j'ai travaillé sont :
-                        <br>
-                        - Une interface de visualisation permettant le choix et la visualtisation de flux vidéo.
-                        <br>
-                        J'ai également réalisé plusieurs plugins pour cette solution, permettant par exemple de vérifier la disponibilité des flux, ou encore d'en ajouter et supprimer.
-                        <br>
-                        <br>
-                        - Un plugin, présenté sous forme de dll (Dynamic Link Library), incorporé à une application déjà éxistante, en me basant sur le code de plugins exemples.
-                        <br>
-                        son but est l'affichage de messages sur l'application d'un client, depuis un poste ayant un rôle d'administrateur.
-                        <br>
-                        <img src=".\Images\Organigramme_Dsic.png" />
+                <!-- Projet exemple -->
+                <!--<div id="Exemple" class="CadreProjets invisible">
+                    <h3 class="btn-orange">
+                        Projet exemple
+                    </h3>
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
+                        <p class="btn-orange" style="margin: 5px;">
+                            Compétence1
+                        </p>
+                        <p class="btn-orange" style="margin: 5px;">
+                            Compétence2
+                        </p>
+                        <p class="btn-orange" style="margin: 5px;">
+                            Compétence3
+                        </p>
+                    </div>
+                    <p style="margin-top:10px;">
+                        Date de réalisation : 00/00/0000
                     </p>
-                </div>
-                
-                <div id="DivFormation" class="ToggleFormation toggleDiv">
                     <p>
-                        Durant les deux années de formation, j'ai travaillé avec le Centre à Compétences National Renvoi de Flux Vidéo, en tant que développeur :
-                        <br>
-                        C'est un des services faisant partie de la DSIC (Direction des Systèmes d'Informations et de Communication),
-                        <br>
-                        qui fait elle-même partie du Secrétatiat Général pour l'Administration du Ministère de l'intérieur.
-                        <br>
-                        <br>
-                        Le rôle du CCN, comme son nom l'indique, est la mise en place de solutions de renvoi de flux vidéos, sur tout le territoire au bénéfice des services du ministère de l'intérieur.
-                        <br>
-                        <br>
-                        Les deux applications sur lesquelles j'ai travaillé sont :
-                        <br>
-                        - Une interface de visualisation permettant le choix et la visualtisation de flux vidéo.
-                        <br>
-                        J'ai également réalisé plusieurs plugins pour cette solution, permettant par exemple de vérifier la disponibilité des flux, ou encore d'en ajouter et supprimer.
-                        <br>
-                        <br>
-                        - Un plugin, présenté sous forme de dll (Dynamic Link Library), incorporé à une application déjà éxistante, en me basant sur le code de plugins exemples.
-                        <br>
-                        son but est l'affichage de messages sur l'application d'un client, depuis un poste ayant un rôle d'administrateur.
-                        <br>
-                        <img src=".\Images\Organigramme_Dsic.png" />
+                        Le projet sert à
+                    </p>
+                </div>-->
+
+
+                <!-- Projet IVS -->
+                <div id="IVS" class="CadreProjets invisible">
+                    <h3 class="btn-orange">
+                        IVS
+                    </h3>
+
+                    <h2>
+                        Compétences remplies :
+                    </h2>
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
+                        <p class="btn-orange" style="margin: 5px;">
+                            Répondre aux incidents<br>
+                            et aux demandes d'assistance et d'évolution
+                        </p>
+                        <p class="btn-orange" style="margin: 5px; padding-top: 20px;">
+                            Travailler en mode projet
+                        </p>
+                        <p class="btn-orange" style="margin: 5px;">
+                            Mettre à disposition des utilisateurs<br>
+                            un service informatique
+                        </p>
+                    </div>
+                    <p style="margin-top:10px; margin-bottom: 30px;">
+                        Date de réalisation : Durant les deux années de formation
+                    </p>
+
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: left;">
+                        <div style="display: flex; flex-direction: column; justify-content: start; padding-right: 20px;">
+                            <img src=".\Images\Capture_IVS.PNG" style="width:25vw; margin-left:28vw;" />
+                            <p>
+                                IVS est une solution dont le but est le renvoi de flux vidéo de partenaires locaux (villes, opérateurs de transport en commun…)
+                                vers les services de l'État locaux (commissariats, DDSP, gendarmerie, préfecture…).<br>
+                            </p>
+                            <h2>
+                                Partie 1
+                            </h2>
+
+
+                            <!-- 
+                            - Respect cahier des charges
+                            (deux images alignées)
+
+                            - Ajout de plugins
+                             -->
+
+
+
+                        </div>
+<!--                         
+                        <div style="display: flex; flex-direction: column; justify-content: start;">
+                            <p style="text-align:left">
+
+                                • SÉMAPHORE est un renvoi vidéo des services de l’État locaux (DDSP) vers les services de l’État centraux (salles de crise du Ministère de l’Intérieur, RAID…). La liaison est assurée par le RIE, sur des VLANs dédiés.
+                                Une interface de renvoi de flux vidéo qui utilise une liste d'addresses rtsp.<br /><br />
+
+                                C'est une solution que j'ai réalisé durant les deux années, en suivant un cahier des charges lors du développement de la première version.<br />
+                                J'ai eu l'occasion de le modifier en suivant les demandes et retours des clients<br /><br />
+
+                                Le programme supporte l'ajout de plugins afin de mieux correspondre aux demandes spécifiques <br />
+                                (personalisation en fonction du client) <br />
+                            </p>
+                            <img src=".\Images\Capture_IVS_Systray.PNG" style=" width: 12vw;" />
+                        </div> -->
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Mise en place de GLPI -->
+                <!-- <div id="GLPI" class="CadreProjets invisible">
+                    <h3 class="btn-orange">
+                        Mise en place de GLPI
+                    </h3>
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
+                        <p class="btn-orange" style="margin: 5px;">
+                            Gérer le patrimoine informatique
+                        </p>
+                    </div>
+                    <p style="margin-top:10px;">
+                        Date de réalisation : 01/12/2023
+                    </p>
+                    <p>
+                        Nous avons mis en place au début de l'année scolaire de 2023 un GLPI (Gestionnaire Libre de Parc Informatique) dans le cadre d'un TP.<br><br>
+
+                        Cette mise en place a été effectuée en utilisant le système de parc informatique VMware, sur poste individuel.<br>
+                        Les machines virtuelles crées lors du TP faisaient tourner une version de Linux Ubuntu, sur lesquelles GLPI a été mis en place.<br>
+
+                        GLPI permet non seulement de gérer un parc informatique (savoir l'ensemble du matériel renseigné),<br>
+                        il permet également de mettre en place un système de gestion de tickets.
+
+
                     </p>
                 </div> -->
+
+
+                <!-- Veille technologique -->
+                <!--<div id="Veille" class="CadreProjets invisible">
+                    <h3 class="btn-orange">
+                        La veille technologique
+                    </h3>
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
+                        <p class="btn-orange" style="margin: 5px;">
+                            Gérer le patrimoine informatique
+                        </p>
+                        <p class="btn-orange" style="margin: 5px;">
+                            Organiser son développement professionnel
+                        </p>
+                    </div>
+                    <p style="margin-top:10px;">
+                        Date de réalisation : Du 01/11/2023 au 31/08/2025
+                    </p>
+                    <p>
+                        La veille technologique est un des types de la veille stratégique, qui consiste à surveiller les évolutions et innovations dans un secteur d'activité donnée.<br><br>
+                        Lors de ma formation, j'ai eu a en mener une, ayant choisi le thème des frameworks multiplateformes.<br><br>
+
+                        Mais il y a beaucoup à présenter,<br>
+                        plus de détails ici ↓ !<br><br>
+                        <a href="veille.html" class="btn-orange">Veille technologique</a>
+                    </p>
+                </div>-->
+
+
+                <!-- Projet Onvif -->
+                <!--<div id="Onvif" class="CadreProjets invisible">
+                    <h3 class="btn-orange">
+
+                        Utilisation d'ONVIF
+                    </h3>
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
+                        <p class="btn-orange" style="margin: 5px;">
+                            Gérer le patrimoine informatique
+                        </p>
+                    </div>
+                    <p style="margin-top:10px;">
+                        Date de réalisation : 01/05/2024
+                    </p>
+                    <p>
+                        Lors du développement du projet IVS, j'ai eu l'occasion d'utiliser la norme ONVIF, afin de récupérer des informations depuis les caméras dont le flux est renseigné.<br />
+
+                        Cette norme fixe des règles sur la communiquation des équipements qui la suivent, permettant la communication entre des appateils de différentes marques,
+                        ou qui fonctionnent différament.<br />
+                        Cela permet d'envoyer des commandes aux appateils, et de récupérer certaines de leurs informations.<br />
+                        Je l'ai incorporé dans la solution IVS afin d'effectuer des tests sur les flux renseignés et d'être renseigné sur l'état des caméras à tout moment.
+                    </p>
+                </div>-->
+
+
+                
+
+
+
+
+                <!-- Cadre de cohérence technique : Référentiel des outils et des technologies qu'il est possible d'utilser au ministère de l'intérieur -->
+
+
+                <!-- Projet Milestone -->
+                <!-- <div id="Milestone" class="CadreProjets invisible">
+        <h3 class="btn-orange">
+            Milestone - Xprotect
+        </h3>
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
+            <p class="btn-orange" style="margin: 5px;">
+                Gérer le patrimoine informatique
+            </p>
+            <p class="btn-orange" style="margin: 5px;">
+                Organiser son développement professionnel
+            </p>
+        </div>
+        <p style="margin-top:10px;">
+            Date de réalisation : Juillet - Août 2024
+        </p>
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: left;">
+            <img src=".\Images\Capture_Milestone_client.PNG" style="width:35vw; margin-left:20px; margin-right:20px;" />
+            <p style="text-align:left">
+                Xprotect est un des produit proposés par Milestone, un leader mondial des systèmes de gestion de vidéosurveillance.<br /><br />
+                Le CCN Renvoi de flux vidéo a adapté cette solution afin de faire son installation son principal service proposé.<br /><br />
+
+                Lors de ma formation, j'ai eu l'occasion de créer un plugin pour cette solution permettant l'affichage de "messages toasts" à l'écran,
+                afin de pouvoir informer aisément les clients de la solution, par exemple en cas de maintenance ou de problème technique.
+            </p>
+
+        </div>
+    </div> -->
+                <!-- Formalisation des offres -->
+                <!-- <div id="Formalisation" class="CadreProjets invisible">
+        <h3 class="btn-orange">
+            Formalisation des offres
+        </h3>
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
+            <p class="btn-orange" style="margin: 5px;">
+                Développer la présence en ligne de l'organisation
+            </p>
+        </div>
+        <p style="margin-top:10px;">
+            Date de réalisation : du 01/01/2024 au 30/04/2024
+        </p>
+        <p>
+            Lors de ma formation, j'ai pu développer un des services proposés par le CCN, ainsi que créer un plugin pour une application déjà éxistante.</br>
+            Mon développement sur ces offres a permi de les formaliser, afin de pouvoir les proposer sur l'intranet du SGAMI
+        </p>
+    </div> -->
+                <!--
+                              Gérer le patrimoine informatique
+                              Répondre aux incidents et aux demandes d'assistance et d'évolution
+                              Développer la présence en ligne de l'organisation
+                              Travailler en mode projet
+          IVS                 Mettre à disposition des utilisateurs un service informatique
+                              Organiser son développement professionnel
+    -->
+                <!-- <div>
+        <button onclick="toggleEntre()" class="btn-orange">Projets en entreprise</button>
+        <button onclick="toggleLycee()" class="btn-orange">Projets en formation</button>
+    </div>
+
+    <div id="DivEntreprise" class="ToggleEntreprise toggleDiv translate-to-left">
+        <p>
+            Durant les deux années de formation, j'ai travaillé avec le Centre à Compétences National Renvoi de Flux Vidéo, en tant que développeur :
+            <br>
+            C'est un des services faisant partie de la DSIC (Direction des Systèmes d'Informations et de Communication),
+            <br>
+            qui fait elle-même partie du Secrétatiat Général pour l'Administration du Ministère de l'intérieur.
+            <br>
+            <br>
+            Le rôle du CCN, comme son nom l'indique, est la mise en place de solutions de renvoi de flux vidéos, sur tout le territoire au bénéfice des services du ministère de l'intérieur.
+            <br>
+            <br>
+            Les deux applications sur lesquelles j'ai travaillé sont :
+            <br>
+            - Une interface de visualisation permettant le choix et la visualtisation de flux vidéo.
+            <br>
+            J'ai également réalisé plusieurs plugins pour cette solution, permettant par exemple de vérifier la disponibilité des flux, ou encore d'en ajouter et supprimer.
+            <br>
+            <br>
+            - Un plugin, présenté sous forme de dll (Dynamic Link Library), incorporé à une application déjà éxistante, en me basant sur le code de plugins exemples.
+            <br>
+            son but est l'affichage de messages sur l'application d'un client, depuis un poste ayant un rôle d'administrateur.
+            <br>
+            <img src=".\Images\Organigramme_Dsic.png" />
+        </p>
+    </div>
+
+    <div id="DivFormation" class="ToggleFormation toggleDiv">
+        <p>
+            Durant les deux années de formation, j'ai travaillé avec le Centre à Compétences National Renvoi de Flux Vidéo, en tant que développeur :
+            <br>
+            C'est un des services faisant partie de la DSIC (Direction des Systèmes d'Informations et de Communication),
+            <br>
+            qui fait elle-même partie du Secrétatiat Général pour l'Administration du Ministère de l'intérieur.
+            <br>
+            <br>
+            Le rôle du CCN, comme son nom l'indique, est la mise en place de solutions de renvoi de flux vidéos, sur tout le territoire au bénéfice des services du ministère de l'intérieur.
+            <br>
+            <br>
+            Les deux applications sur lesquelles j'ai travaillé sont :
+            <br>
+            - Une interface de visualisation permettant le choix et la visualtisation de flux vidéo.
+            <br>
+            J'ai également réalisé plusieurs plugins pour cette solution, permettant par exemple de vérifier la disponibilité des flux, ou encore d'en ajouter et supprimer.
+            <br>
+            <br>
+            - Un plugin, présenté sous forme de dll (Dynamic Link Library), incorporé à une application déjà éxistante, en me basant sur le code de plugins exemples.
+            <br>
+            son but est l'affichage de messages sur l'application d'un client, depuis un poste ayant un rôle d'administrateur.
+            <br>
+            <img src=".\Images\Organigramme_Dsic.png" />
+        </p>
+    </div> -->
 
             </section>
         </main>
