@@ -46,7 +46,7 @@
                     <button class="BoutonProjets btn-orange" Show-Section="Portfolio">Préparation et présentation du portfolio </button>
                     <button class="BoutonProjets btn-orange" Show-Section="GLPI">Mise en place de GLPI </button>
                     <button class="BoutonProjets btn-orange" Show-Section="Logeproj">Logeproj</button>
-                    <button class="BoutonProjets btn-orange" Show-Section="Veille">La veille technologique</button>
+                    <button class="BoutonProjets btn-orange" Show-Section="Veille">Veille technologique</button>
 
                     <h3>
                         Entreprise et CFA
@@ -291,7 +291,7 @@
                     <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
                         <p class="btn-orange" style="margin: 5px;">
                             Répondre aux incidents et aux demande<br>
-                            d’assistance et d’évolution
+                            d'assistance et d'évolution
                         </p>
                         <p class="btn-orange" style="margin: 5px;">
                             Travailler en mode projet
@@ -300,51 +300,93 @@
                     <p style="margin-top:10px;">
                         Date de réalisation : Du 01/01/2024 Au 01/04/2025
                     </p>
-                    <p>
-                        Logrproj est une application web open source, développée avec Angular, sous forme de MVC (modèle, vue, controlleur).<br>
-                        Ce logiciel est dividé en deux projets, un serveur (avec une base de données et une API) et un client (avec une interface et qui utilise l'API pour afficher les données).<br>
+                    <p style="margin: 5px;">
+                        Logrproj est une application web open source, développée avec Angular, sous forme de MVC (Modèle, Vue, Contrôleur).<br>
+                        Ce logiciel est dividé en deux projets, un serveur (avec une base de données et une API, ou application programming interface) et un client (avec une interface et qui utilise l'API pour afficher les données).<br>
                         <br>
-                        Plusieurs travaux pratiques ont effectués lors des deux années de formation, catégorisés en trois parties :<br>
-                        <br>
-                        1 - Création d'une vue affichant un nouveau composant et ses données<br>
-                        (La partie de code concernant le chargement des informations depuis la base étant déjà complétée),<br>
-                        <br>
-                        2 - Le chiffrement des mots de passe en base de donnée en utilisant la méthode de sel et poivre,<br>
-                        <br>
-                        3 - Stockage d'une nouvelle donnée et affichage sur l'interface, depuis une vue déjà existante.<br>
+                        Plusieurs travaux pratiques ont effectués lors des deux années de formation, portant sur la partie serveur tout comme sur la partie client de l'application.
+                        Les projets sont divisés en trois parties :<br>
                         <br>
                     </p>
+
+                    <!-- Ajout vue -->
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content:left;">
+                        <img src=".\Images\Logeproj_vue.png" style="width:45vw; margin-left: 10px;" />
+                        <p style="margin: 8px; margin-top: 150px;">
+                            Création d'une vue affichant un nouveau composant et ses informations :<br>
+                            <br>
+                            Le but de ce TP était de créer une vue et un contrôleur dans la partie client de l'application afin d'afficher des données déjà chargées par la partie serveur,
+                            dont le modèle était déjà existant.
+                            <br>
+                        </p>
+                    </div>
+
+                    <!-- Sel et poivre -->
+                    <div style="width: 100%; display: flex; flex-direction: row-reverse; justify-content:left; margin-top: 30px;">
+                        <img src=".\Images\Logeproj_sel_et_poivre.png" style="width:45vw; margin-right: 10px;" />
+                        <p style="margin: 8px; margin-top: 50px; ">
+                            Chiffrement des mots de passe en base de donnée :<br>
+                            <br>
+                            Lors du deuxième travaux pratique, il nous a été demandé de chiffrer les mots de passe des utilisateurs en utilisant la méthode du sel et du poivre :<br>
+                            <br>
+                            - Le sel est une clé non chifrée stockée dans la base de donnée, différente pour chaque utilisateur,<br>
+                            - Le poivre est une clé présente dans le code qui permet de hacher le mot de passe de la même manière pour tous les utilisateurs.<br>
+                            <br>
+                            Cette méthode renforce énormément la sécurité, car le vrai mot de passe n'est jamais renseigné, et le sel et le poivre sont inexploitables seuls.
+
+
+                        </p>
+                    </div>
+
+                    <!-- Ajout champ -->
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content:left; margin-top: 30px;">
+                        <img src=".\Images\Logeproj_vue_ajout_colonne.png" style="width:45vw; margin-left: 10px;" />
+                        <p style="margin: 8px; margin-top: 150px;">
+                            Stockage d'une nouvelle donnée et affichage sur l'interface, depuis une vue déjà existante.<br>
+                            <br>
+                                L'objectif de ce TP était d'ajouter dans une colonne d'une table déjà existante de la base de données, puis d'afficher son contenu dans la vue du premier travaux pratique présenté.<br>
+                                <br>
+                                Il a donc été nécessaire de stocker le script sql ajoutant la colonne pour permettre le déploiement sur toutes les instances de logeproj,
+                                puis il a été nécessaire de modifier le DAO, le contrôleur, le modèle et la vue doivent ensuite être modifiés.        
+                            <br>
+                        </p>
+                    </div>
                 </div>
                 
 
                 <!-- Veille technologique -->
                 <div id="Veille" class="CadreProjets invisible">
-                    <h3 class="btn-orange">
-                        La veille technologique
-                    </h3>
-
-                    <h2>
-                        Compétences remplies :
-                    </h2>
-                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
-                        <p class="btn-orange" style="margin: 5px;">
-                            Gérer le patrimoine informatique
+                    <div style="padding-bottom: 20px;">
+                        <h3 class="btn-orange">
+                            La veille technologique
+                        </h3>
+    
+                        <h2>
+                            Compétences remplies :
+                        </h2>
+                        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: -10px;">
+                            <p class="btn-orange" style="margin: 5px;">
+                                Gérer le patrimoine informatique
+                            </p>
+                            <p class="btn-orange" style="margin: 5px;">
+                                Organiser son développement professionnel
+                            </p>
+                        </div>
+                        <p style="margin-top:10px;">
+                            Date de réalisation : Du 01/11/2023 au 31/08/2025
                         </p>
-                        <p class="btn-orange" style="margin: 5px;">
-                            Organiser son développement professionnel
+                        <p style="margin: 5px;">
+                            La veille technologique est un des types de la veille stratégique, qui consiste à surveiller les évolutions et innovations dans un secteur d'activité donnée.<br><br>
+                            Lors de ma formation, j'ai eu a en mener une, ayant choisi le thème des frameworks multiplateformes.<br><br>
                         </p>
-                    </div>
-                    <p style="margin-top:10px;">
-                        Date de réalisation : Du 01/11/2023 au 31/08/2025
-                    </p>
-                    <p>
-                        La veille technologique est un des types de la veille stratégique, qui consiste à surveiller les évolutions et innovations dans un secteur d'activité donnée.<br><br>
-                        Lors de ma formation, j'ai eu a en mener une, ayant choisi le thème des frameworks multiplateformes.<br><br>
-
-                        Mais il y a beaucoup à présenter,<br>
-                        plus de détails ici ↓ !<br><br>
+                        <img src=".\Images\Veille_framework_multiplateforme.PNG" style="width:60vw;" />
+                        <p>
+    
+                            Mais il y a beaucoup à présenter,<br>
+                            plus de détails ici ↓ !<br><br>
+                        </p>
                         <a href="veille.html" class="btn-orange">Veille technologique</a>
-                    </p>
+                    </div>
                 </div>
 
 
