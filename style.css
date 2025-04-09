@@ -297,8 +297,9 @@
 
     #lexique {
         padding-top: 150px;
-        height: 100vh;
+        height: calc(100vh - 150px);
         color: white;
+        overflow:scroll;
     }
     .cadreLexique {
         display: flex;
@@ -306,7 +307,7 @@
         gap: 20px; /* Espace entre les cartes */
         flex-wrap: wrap; /* Cartes en colonne sur petits écrans */
         
-        overflow:scroll;
+        padding-bottom:20px;
     }
     .caseLexique {
         text-align:center;
