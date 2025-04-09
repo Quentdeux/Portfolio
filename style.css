@@ -305,101 +305,16 @@
         justify-content: center; /* Centre les cartes */
         gap: 20px; /* Espace entre les cartes */
         flex-wrap: wrap; /* Cartes en colonne sur petits écrans */
+        
+        overflow:scroll;
+    }
+    .caseLexique {
+        text-align:center;
     }
 
     #contacter {
+        padding-top: calc(100px + 20vh);
         height: 100vh;
         color: white;
     }
 /**/
-
-
-/* Animation d'apparition*/
-    /*@keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(10px);*/ /* Légère remontée */
-        /*}
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes TranslateToLeft{
-        from {  margin-right: 0%;   }
-        to {    margin-right: 200%; }
-    }
-    @keyframes TranslateFromLeft{
-        from {  margin-right: 200%; }
-        to {    margin-right: 0%;   }
-
-    }
-    @keyframes TranslateToRight{
-        from {  margin-left: 0%;    }
-        to {    margin-left: 200%;  }
-    }
-    @keyframes TranslateFromRight{
-        from {  margin-left: 200%;  }
-        to {    margin-left: 0%;    }
-    }
-
-    .translate-to-left {
-        animation: TranslateToLeft 0.5s forwards;
-    }
-    .translate-from-left {
-        animation: TranslateFromLeft 0.5s forwards;
-    }
-    .translate-to-right {
-        animation: TranslateToRight 0.5s forwards;
-    }
-    .translate-from-right {
-        animation: TranslateFromRight 0.5s forwards;
-    }*/
-
-/* Bouton */
-    /**/
-
-/* Conteneur des cartes */
-    /*.projects-container {
-        display: flex;
-        justify-content: center;*/ /* Centre les cartes */
-        /*gap: 25px;*/ /* Espace entre les cartes */
-        /*flex-wrap: wrap;*/ /* Cartes en colonne sur petits écrans */
-    /*}*/
-
-/* Style des cartes */
-    /*.card {
-        background: linear-gradient(135deg, #de5100, #de2900);
-        border-radius: 8px;*/ /* Coins arrondis */
-        /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/ /* Ombre */
-        /*width: 280px;*/ /* Largeur fixe */
-        /*padding: 20px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;*/ /* Animation d'agrandissement */
-        /*text-align: center;
-    }*/
-
-    /* Agrandissement au survol */
-    /*.card:hover {
-        transform: scale(1.05);*/ /* Zoom à 105% */
-        /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/ /* Ombre renforcée */
-    /*}*/
-
-    /* Titre des cartes */
-    /*.card h2 {
-        margin-bottom: 15px;
-    }*/
-
-    /* Liste des compétences */
-    /*.card ul {
-        padding: 0;
-        list-style: none;
-    }
-
-    .card li {
-        margin-bottom: 10px;
-    }
-
-    .VeilleCard{
-        width: 800px;
-    }*/
